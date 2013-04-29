@@ -14,7 +14,7 @@ class HgAnnotateCommand(sublime_plugin.TextCommand):
             return
 
         proc = subprocess.Popen(
-            ['hg', 'annotate', '-vudnl', file_path],
+            ['hg', 'annotate', '-vudcl', file_path],
             stdout=subprocess.PIPE
         )
         result = proc.stdout.read()
