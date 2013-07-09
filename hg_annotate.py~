@@ -27,7 +27,7 @@ class HgAnnotateCommand(sublime_plugin.TextCommand):
 
         print(annotate_file_path)
 
-        with open(annotate_file_path, 'wb') as f:
+        with open(annotate_file_path, 'w') as f:
             f.write(result)
 
         self.view.window().open_file(annotate_file_path)

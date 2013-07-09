@@ -1,3 +1,6 @@
 [
-    {"command": "hg_annotate" }
+    {
+	"caption": "HG-Annotate",
+	"command": "hg_annotate" 
+    }
 ]
